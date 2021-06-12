@@ -1,5 +1,5 @@
 using System;
-					
+//Funny thing: I don't actually know if this code works					
 public class NumberGuess
 {
 	public static void Main()
