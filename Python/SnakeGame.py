@@ -15,7 +15,7 @@ map = [[' ', ' ', ' ', ' ', 'A'],\
        [' ', ' ', ' ', ' ', ' '],\
        ['S', ' ', ' ', ' ', ' ']]
 print("Your goal is to navigate the snake(S) to the apple(A) with the commands below.")
-print("U:Up\nD:Down\nL:Left\nR:Right")
+print("W:Up\nS:Down\nA:Left\nD:Right")
 print_map()
 while map[0][-1] == "A":
     for i in map:
@@ -25,28 +25,28 @@ while map[0][-1] == "A":
                 height = map.index(i)
     dir = str(input("Enter a direction: "))
     dir = dir.upper()
-    if dir == "U":
+    if dir == "W":
         if height == 0:
             print("Not a valid command.")
             continue
         else:
             map[height][length] = " "
             map[(height - 1)][length] = "S"
-    if dir == "D":
+    if dir == "S":
         if height == 4:
             print("Not a valid command.")
             continue
         else:
             map[height][length] = " "
             map[(height +1)][length] = "S"
-    if dir == "L":
+    if dir == "A":
         if length == 0:
             print("Not a valid command.")
             continue
         else:
             map[height][length] = " "
             map[height][(length-1)] = "S"
-    if dir == "R":
+    if dir == "D":
         if length == 4:
             print("Not a valid command.")
             continue
