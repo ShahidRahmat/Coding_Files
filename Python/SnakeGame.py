@@ -1,5 +1,5 @@
 #Simple Snake Game, fixed starting and ending point
-
+#Output: https://replit.com/@Shahidrahmat/Snakegame#main.py
 def print_map():
     max_row = len(map)
     max_col = len(map[0])
