@@ -12,9 +12,7 @@ namespace testcs
     return Convert.ToDouble(table.Compute(expression, String.Empty));
     }
       Console.WriteLine("Enter a number: ");
-      Console.WriteLine("Screw you");
       string num1 = Console.ReadLine();
-      Console.WriteLine("Screw you");
       Console.WriteLine("Choose one of the four operators\n(+, -, /, *): ");
       string op = Console.ReadLine();
       Console.WriteLine("Enter a second number: ");
